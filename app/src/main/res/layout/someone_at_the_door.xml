@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        tools:context=".activities.SomeonecameActivity">
+
+
+    <Button
+            android:text="@string/unlock"
+            android:textAllCaps="false"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/unlock_btn"
+            android:textColor="@color/colorBackground"
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/colorTextHint" android:fontFamily="@font/open_sans_bold"
+            android:textSize="18sp" android:onClick="send" android:textAlignment="center"/>
+    <Button
+            android:text="@string/don_t_unlock"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground" android:fontFamily="@font/open_sans_bold"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dontunlock_btn"
+            android:layout_marginTop="-48dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginEnd="100dp"
+            android:background="@color/colorTextHint"
+            android:textSize="18sp" android:textAlignment="center"/>
+    <TextView
+            android:text="@string/someone_is_at_the_door"
+            android:layout_width="match_parent"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="-470dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:id="@+id/Someone_came"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="18sp" android:textAlignment="center"/>
+    <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/open"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="-300dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/open"
+            android:id="@+id/editText" android:visibility="invisible"/>
+    <Button
+            android:text="@string/see_who_is_at_the_door"
+            android:layout_width="220dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground"
+            android:fontFamily="@font/open_sans_bold"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="430dp"
+            android:layout_marginBottom="-450dp"
+            android:layout_marginStart="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/see_person_at_door"
+    />
+
+    <ImageView
+            android:layout_width="380dp"
+            android:padding="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-10dp"
+            android:layout_height="300dp"
+            android:id="@+id/raspi_img"
+            android:scaleType="fitXY"
+
+
+    />
+</LinearLayout>
